@@ -123,9 +123,15 @@ export const WebcamHandler: React.FC<WebcamHandlerProps> = ({
   }, [onFrame]);
 
   return (
-    <div className="hidden">
-      <video ref={videoRef} autoPlay playsInline muted width="320" height="240" />
-      <canvas ref={canvasRef} width="64" height="48" />
+    <div className="fixed bottom-6 right-6 z-50 w-36 md:w-48 aspect-[4/3] rounded-xl overflow-hidden border-2 border-white/20 shadow-[0_0_20px_rgba(0,0,0,0.5)] bg-black transition-all">
+      <video 
+        ref={videoRef} 
+        autoPlay 
+        playsInline 
+        muted 
+        className="w-full h-full object-cover scale-x-[-1] opacity-90" 
+      />
+      <canvas ref={canvasRef} className="hidden" width="64" height="48" />
     </div>
   );
 };
