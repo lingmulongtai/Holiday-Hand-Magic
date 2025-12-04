@@ -1,0 +1,7 @@
+{
+  "name": "Holiday Hand Magic",
+  "description": "Interactive 3D particle system controlled by hand motion and Generative AI.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
