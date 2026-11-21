@@ -2,15 +2,33 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="https://picsum.photos/32/32" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230c0d10'/%3E%3Cpath d='M16 6l6 10h-4l4 8H10l4-8h-4l6-10Z' fill='none' stroke='%23e2b76e' stroke-width='1.8' stroke-linejoin='round'/%3E%3C/svg%3E" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Holiday Hand Magic</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet" />
     <style>
-      body { margin: 0; background-color: #050510; overflow: hidden; }
-      .font-magic { font-family: 'Mountains of Christmas', cursive; }
-      .font-cinzel { font-family: 'Cinzel', serif; }
+      :root {
+        --bg: #0b0c0e;
+        --surface: rgba(18, 19, 22, 0.86);
+        --surface-elevated: #18191d;
+        --border: rgba(255, 255, 255, 0.1);
+        --ink: #ededed;
+        --muted: #a1a1aa;
+        --accent: #e2b76e;
+      }
+      body {
+        margin: 0;
+        background-color: var(--bg);
+        color: var(--ink);
+        font-family: 'Instrument Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+        overflow: hidden;
+        -webkit-font-smoothing: antialiased;
+      }
+      .font-display { font-family: 'Newsreader', Georgia, serif; }
+      .font-mono-num { font-family: 'JetBrains Mono', ui-monospace, monospace; font-variant-numeric: tabular-nums; }
     </style>
   <script type="importmap">
 {
